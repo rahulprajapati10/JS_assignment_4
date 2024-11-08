@@ -21,8 +21,26 @@
 
 
 
-// sorry for inconveniene 
+let S = "AbaDd D";
+let countA = 0;
+let countD = 0;
 
-// solutuin is in pending
+function countCharacters() {
 
-// checkout from question 3
+      for (let char of S) {
+    
+          if (char === 'A') {
+    
+              countA++;
+    
+          } else if (char === 'D') {
+    
+              countD++;
+          }
+      }
+    
+      return [countA, countD];
+    }
+    
+    
+    console.log(countCharacters()); 
